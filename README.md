@@ -17,7 +17,7 @@
 ## Projects
 📰 **[Fake News Classifier](https://github.com/karsind/FakeNewsClassfier)**  
 A machine learning project to classify fake and legitimate news articles.
-[Paper](assets/Final_Report_FNC.pdf)   
+[Download Paper](assets/Final_Report_FNC.pdf)   
 
 
 ### Links
