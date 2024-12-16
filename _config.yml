@@ -1,4 +1,5 @@
-baseurl: "" # Leave empty if deploying on GitHub Pages
-url: "https://keemarice.github.io" # Update with your GitHub Pages URL
-theme: minima
+remote_theme: pages-themes/dinky@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
+title: My Personal Website 
