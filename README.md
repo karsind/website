@@ -1,4 +1,3 @@
-#
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="assets/profile.jpg" alt="Profile Picture" width="150" height="200" 
@@ -15,6 +14,9 @@
 </div>
 
 ---
+
+## Projects
+Fake News Classifier: 
 
 ### Links
 - 📄 [My Resume](assets/Karsin_Dass_Resume.pdf)  
