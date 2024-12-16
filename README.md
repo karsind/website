@@ -7,14 +7,14 @@
     <p>
       Hi! I'm <strong>Karsin Dass</strong>.<br>
       I am currently a student at the University of Michigan - Ann Arbor, pursuing a degree in 
-      Data Science.
+      Data Science.  My interests outside of school include working out, michigan football, and cooking.    
     </p>
   </div>
 </div>
 
 ---
 
-## Projects
+### Projects
 📰 **[Fake News Classifier](https://github.com/karsind/FakeNewsClassfier)**  
 A machine learning project to classify fake and legitimate news articles.
 [Download Paper](assets/Final_Report_FNC.pdf)   
