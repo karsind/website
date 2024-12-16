@@ -28,4 +28,4 @@ A recreation of the classic Tetris game implemented with Arduino and an LED boar
 - 🌐 [My Website](https://keemarice.github.io)
 - 💼 [My LinkedIn](https://www.linkedin.com/in/karsindass)
 
-Feel free to explore my website to learn more about my projects and background!
+Feel free to contact me at kdass@umich.edu!
