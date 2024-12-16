@@ -1,7 +1,4 @@
 baseurl: "" # Leave empty if deploying on GitHub Pages
 url: "https://keemarice.github.io" # Update with your GitHub Pages URL
-theme: jekyll-theme-modernist
-sass:
-  style: compressed
-include:
-  - assets/css/style.css
+theme: minima
+
