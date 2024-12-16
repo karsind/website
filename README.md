@@ -1,3 +1,4 @@
+# 👨‍💻 <span style="font-size: 0.7em; color: gray;">based in Michigan</span>
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="assets/profile.jpg" alt="Profile Picture" width="150" height="200" 
