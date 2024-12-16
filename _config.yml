@@ -1,0 +1,5 @@
+title: My Personal Website
+description: Welcome to my personal website!
+baseurl: "" # Leave empty if deploying on GitHub Pages
+url: "https://keemarice.github.io" # Update with your GitHub Pages URL
+theme: lagrange # Default Jekyll theme
