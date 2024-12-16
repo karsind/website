@@ -19,9 +19,13 @@
 A machine learning project to classify fake and legitimate news articles.
 [Download Paper](assets/Final_Report_FNC.pdf)   
 
+🎮 **[Tetris Game](https://github.com/karsind/tetris)**  
+A recreation of the classic Tetris game implemented with Arduino and an LED board.  
+
 
 ### Links
 - 📄 [My Resume](assets/Karsin-Dass-Resume.pdf)  
 - 🌐 [My Website](https://keemarice.github.io)
+- 💼 [My LinkedIn](https://www.linkedin.com/in/karsindass)
 
 Feel free to explore my website to learn more about my projects and background!
