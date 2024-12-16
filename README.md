@@ -25,7 +25,7 @@ A recreation of the classic Tetris game implemented with Arduino and an LED boar
 
 ### Links
 - 📄 [My Resume](assets/Karsin-Dass-Resume.pdf)  
-- 🌐 [My Website](https://keemarice.github.io)
+- 🌐 [My Website](https://karsind.github.io/website/) (#infinite loop)
 - 💼 [My LinkedIn](https://www.linkedin.com/in/karsin-dass/)
 
 Feel free to contact me at kdass@umich.edu!
