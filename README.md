@@ -8,8 +8,8 @@
     <h2>About Me</h2>
     <p>
       Hi! I'm <strong>Karsin Dass</strong>.<br>
-      I am currently a student at the <strong>University of Michigan - Ann Arbor</strong>, pursuing a degree in 
-      <strong>Data Science</strong>.
+      I am currently a student at the University of Michigan - Ann Arbor, pursuing a degree in 
+      Data Science.
     </p>
   </div>
 </div>
