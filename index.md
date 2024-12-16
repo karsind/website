@@ -1,4 +1,7 @@
-# Welcome to My Personal Website 👋
+---
+layout: default
+title: Welcome to My Personal Website
+---
 
 <div align="center">
   <img src="assets/profile.jpg" alt="Profile Picture" width="150" style="border-radius: 50%;">
