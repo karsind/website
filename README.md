@@ -16,7 +16,7 @@
 
 ---
 
-## Links
+### Links
 - 📄 [My Resume](assets/Karsin_Dass_Resume.pdf)  
 - 🌐 [My Website](https://keemarice.github.io)
 
