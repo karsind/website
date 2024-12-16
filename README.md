@@ -19,7 +19,7 @@
 Fake News Classifier: 
 
 ### Links
-- 📄 [My Resume](assets/Karsin_Dass_Resume.pdf)  
+- 📄 [My Resume](assets/Karsin-Dass-Resume.pdf)  
 - 🌐 [My Website](https://keemarice.github.io)
 
 Feel free to explore my website to learn more about my projects and background!
