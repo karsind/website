@@ -14,6 +14,12 @@
 
 ---
 
+### Experience
+
+- 🏌️‍♂️ **Summer 2024:** Data Engineering @ PING  
+- 🚛 **Summer 2023:** Brokerage Analytics @ RXO  
+
+
 ### Projects
 📰 **[Fake News Classifier](https://github.com/karsind/FakeNewsClassfier)**  
 A machine learning project to classify fake and legitimate news articles.
