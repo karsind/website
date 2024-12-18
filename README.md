@@ -16,12 +16,12 @@
 
 ### Experience
 
-- 🏌️‍♂️ **Summer 2024**: Data Engineering @ PING  
-- 🚛 **Summer 2023**: Brokerage Analytics @ RXO  
+- **Summer 2024**: Data Engineering @ PING 🏌️‍♂️   
+- **Summer 2023**: Brokerage Analytics @ RXO 🚛
 
 ###### On-Campus
-- 📈 **VP of Recruitment & Outreach** @ [Michigan Ethical Investments (MEI)](https://umichmei.com/)  
-- 💻 **Grader** for EECS 183 @ University of Michigan  
+- **VP of Recruitment & Outreach** @ [Michigan Ethical Investments (MEI)](https://umichmei.com/) 📈   
+- **Grader** for EECS 183 @ University of Michigan 💻  
  
 
 
