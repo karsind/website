@@ -39,4 +39,9 @@ A recreation of the classic Tetris game implemented with Arduino and an LED boar
 - 💼 [My LinkedIn](https://www.linkedin.com/in/karsin-dass/)
 - 🌐 [My Website](https://karsind.github.io/website/) (#infinite loop)
 
+### Current Interests
+- Watching Game of Thrones 🎥 
+- Learning how to build new things 🔨 (last thing I built = bedside table)
+
+
 Feel free to contact me at kdass@umich.edu!
