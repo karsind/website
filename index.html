@@ -5,14 +5,42 @@
   <title>Karsin Dass 👨‍💻</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --link-color: #64b5f6;
+      --hr-color: #333;
+    }
+
+    body.light {
+      --bg-color: #f8f8f8;
+      --text-color: #121212;
+      --link-color: #1a73e8;
+      --hr-color: #ccc;
+    }
+
     body {
-      background-color: #121212;
-      color: #e0e0e0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       max-width: 800px;
       margin: auto;
       padding: 30px 20px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: none;
+      color: var(--text-color);
+      border: 2px solid var(--text-color);
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 0.9em;
     }
 
     .header {
@@ -32,11 +60,11 @@
 
     h2, h3 {
       margin-top: 0;
-      color: #fff;
+      color: var(--text-color);
     }
 
     a {
-      color: #64b5f6;
+      color: var(--link-color);
       text-decoration: none;
     }
 
@@ -53,26 +81,28 @@
     }
 
     hr {
-      border: 1px solid #333;
+      border: 1px solid var(--hr-color);
       margin: 30px 0;
     }
 
     .section {
       margin-bottom: 40px;
     }
+
     .social-links a {
-  text-decoration: none;
-  margin-right: 20px;
-  color: #e0e0e0;
+      text-decoration: none;
+      margin-right: 20px;
+      color: var(--text-color);
     }
 
     .social-links a:hover {
-  text-decoration: underline;
+      text-decoration: underline;
     }
-
   </style>
 </head>
 <body>
+
+  <button class="toggle" onclick="toggleTheme()">🌙 Toggle Mode</button>
 
   <div class="header">
     <img src="assets/image.png" alt="Profile Picture">
@@ -112,7 +142,6 @@
     </ul>
   </div>
 
-
   <div class="section">
     <h3>Current Interests</h3>
     <ul>
@@ -125,10 +154,23 @@
   <p>Feel free to contact me at <strong>kdass@umich.edu</strong>!</p>
   
   <div class="social-links" style="margin-top: 50px; text-align: center;">
-    <a href="https://github.com/karsind" target="_blank" style="margin-right: 20px; color: #e0e0e0; text-decoration: none;">↗ github</a>
-    <a href="https://www.linkedin.com/in/karsin-dass/" target="_blank" style="margin-right: 20px; color: #e0e0e0; text-decoration: none;">↗ linkedin</a>
-    <a href="https://www.instagram.com/karsindass/" target="_blank" style="color: #e0e0e0; text-decoration: none;">↗ instagram</a>
+    <a href="https://github.com/karsind" target="_blank">↗ github</a>
+    <a href="https://www.linkedin.com/in/karsin-dass/" target="_blank">↗ linkedin</a>
+    <a href="https://www.instagram.com/karsindass/" target="_blank">↗ instagram</a>
   </div>
+
+  <script>
+    // Check local storage and apply theme
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+      document.body.classList.add("light");
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+    }
+  </script>
 
 </body>
 </html>
