@@ -13,7 +13,8 @@
       </nav>
       
 
-  <button class="toggle" onclick="toggleTheme()">🌙</button>
+  <button id="theme-toggle" class="toggle" onclick="toggleTheme()">🌙</button>
+
 
   <div class="header">
     <img src="assets/image.png" alt="Profile Picture">
@@ -75,16 +76,30 @@
   </div>
 
   <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+  
+    // Apply saved theme and update icon on load
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "light") {
       document.body.classList.add("light");
+      toggleBtn.textContent = "🌙"; // Moon icon for light mode (to suggest dark mode toggle)
+    } else {
+      toggleBtn.textContent = "☀️"; // Sun icon for dark mode (to suggest light mode toggle)
     }
-
+  
     function toggleTheme() {
       document.body.classList.toggle("light");
-      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+  
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙"; // Show moon when in light mode
+      } else {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️"; // Show sun when in dark mode
+      }
     }
   </script>
+  
 
 </body>
 </html>

@@ -12,7 +12,7 @@
     <a href="coursework.html">Coursework</a>
   </nav>
 
-  <button class="toggle" onclick="toggleTheme()">🌙</button>
+  <button id="theme-toggle" class="toggle" onclick="toggleTheme()">🌙</button>
 
   <div class="section">
     <h2>Relevant Coursework</h2>
@@ -32,15 +32,29 @@
   </div>
 
   <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+  
+    // Apply saved theme and update icon on load
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "light") {
       document.body.classList.add("light");
+      toggleBtn.textContent = "🌙"; // to suggest dakr mode
+    } else {
+      toggleBtn.textContent = "☀️"; // to suggets light mode
     }
-
+  
     function toggleTheme() {
       document.body.classList.toggle("light");
-      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+  
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙"; 
+      } else {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️"; 
+      }
     }
   </script>
+  
 </body>
 </html>
