@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coursework – Karsin Dass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="coursework.html">Coursework</a>
+  </nav>
+
+  <button class="toggle" onclick="toggleTheme()">🌙 Toggle Mode</button>
+
+  <div class="section">
+    <h2>Relevant Coursework</h2>
+    <ul>
+      <li>MATH 215 - Calculus 3</li>
+      <li>EECS 203 - Discrete Mathematics</li>
+      <li>EECS 281 – Data Structures and Algorithms</li>
+      <li>STATS 415 – Machine Learning</li>
+      <li>EECS 484 – Database Managment Systems</li>
+      <li>EECS 398 – Practical Data Science</li>
+      <li>STATS 306 - Statistical Computing</li>
+      <li>ECON 401 - Intermediate Microeconomics</li>
+      <li>ECON 409 - Game Theory</li>
+      <li>HINDI 216 - Hindi 4</li>
+      <li>HISTART 208 - Intro to African Art</li>
+    </ul>
+  </div>
+
+  <script>
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+      document.body.classList.add("light");
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+    }
+  </script>
+</body>
+</html>
