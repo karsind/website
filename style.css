@@ -155,3 +155,49 @@
   p { animation-delay: 1.5s; }
   .social-links { animation-delay: 1.8s; }
   
+  /* Experience cards NEW*/
+  .experience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .experience-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .experience-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: brightness(0) invert(1); /* makes logos white if they’re dark */
+  }
+  
+  .experience-card h4 {
+    margin: 10px 0 5px;
+    font-size: 1em;
+    color: var(--text-color);
+  }
+  
+  .experience-card p {
+    font-size: 0.9em;
+    color: #aaa;
+    margin: 0;
+  }
+
+
+  
