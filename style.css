@@ -190,7 +190,7 @@
   .experience-card h4 {
     margin: 10px 0 5px;
     font-size: 1em;
-    color: var(--text-color);
+    color: grey;
   }
   
   .experience-card p {
