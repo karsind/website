@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Karsin Dass 👨‍💻</title>
+    <title>Karsin Dass 👨‍💻</title>More actions
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -11,7 +11,7 @@
         <a href="index.html">Home</a>
         <a href="coursework.html">Coursework</a>
       </nav>
-      
+
 
   <button id="theme-toggle" class="toggle" onclick="toggleTheme()">🌙</button>
 
@@ -24,6 +24,7 @@
         Hi! I'm <strong>Karsin Dass</strong>.<br>
         I recently graduated from the University of Michigan – Ann Arbor with a degree in Data Science. 
         My interests include working out, Michigan football, and cooking.
+        My interests include working out, Michigan football, and cooking.  I am currently based in Ann Arbor, Michigan.
         <a href="assets/Karsin-Dass-Resume.pdf" target="_blank">Resume</a>
       </p>
     </div>
@@ -34,52 +35,24 @@
   <div class="section">
     <h3>Experience</h3>
     <div class="experience-cards">
-      
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front experience-card">
-            <img src="assets/messina-logo.png" alt="Messina Logo">
-            <h4>Associate Analytics Consultant</h4>
-            <p>Messina Group Consulting</p>
-          </div>
-          <div class="flip-card-back experience-card">
-            <h4>What I Did</h4>
-            <p>Coming soon...</p>
-          </div>
-        </div>
+      <div class="experience-card">
+        <img src="assets/messina-logo.png" alt="Messina Logo">
+        <h4>Associate Analytics Consultant(Soon)</h4>
+        <p>Messina Group Consulting</p>
       </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front experience-card">
-            <img src="assets/ping-logo.png" alt="PING Logo">
-            <h4>Data Engineering Intern</h4>
-            <p>Summer 2024 – PING</p>
-          </div>
-          <div class="flip-card-back experience-card">
-            <h4>What I Did</h4>
-            <p>Internal application development, Power BI dashboards</p>
-          </div>
-        </div>
+      <div class="experience-card">
+        <img src="assets/ping-logo.png" alt="PING Logo">
+        <h4>Data Engineering Intern</h4>
+        <p>Summer 2024 – PING</p>
       </div>
-  
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front experience-card">
-            <img src="assets/rxo-logo.png" alt="RXO Logo">
-            <h4>Brokerage Analytics Intern</h4>
-            <p>Summer 2023 – RXO</p>
-          </div>
-          <div class="flip-card-back experience-card">
-            <h4>What I Did</h4>
-            <p>Pricing models, data visualization, Excel automation</p>
-          </div>
-        </div>
+      <div class="experience-card">
+        <img src="assets/rxo-logo.png" alt="RXO Logo">
+        <h4>Brokerage Analytics Intern</h4>
+        <p>Summer 2023 – RXO</p>
       </div>
-  
-    </div>
+    </div>    
   </div>
-  
+
   <div class="section">
     <h3>Projects</h3>
     <ul>
@@ -116,7 +89,7 @@
 
   <script>
     const toggleBtn = document.getElementById("theme-toggle");
-  
+
     // Apply saved theme and update icon on load
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "light") {
@@ -125,10 +98,10 @@
     } else {
       toggleBtn.textContent = "☀️"; // Sun icon for dark mode (to suggest light mode toggle)
     }
-  
+
     function toggleTheme() {
       document.body.classList.toggle("light");
-  
+
       if (document.body.classList.contains("light")) {
         localStorage.setItem("theme", "light");
         toggleBtn.textContent = "🌙"; // Show moon when in light mode
@@ -138,15 +111,6 @@
       }
     }
   </script>
-  <script>
-    document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
-      });
-    });
-  </script>  
-  
-  
+
 
 </body>
-</html>
