@@ -158,7 +158,7 @@ hr { animation-delay: 1.2s; }
 p { animation-delay: 1.5s; }
 .social-links { animation-delay: 1.8s; }
 
-/* Experience card layout */
+/* Container */
 .experience-cards {
   display: flex;
   flex-wrap: wrap;
@@ -167,24 +167,23 @@ p { animation-delay: 1.5s; }
   margin-top: 20px;
 }
 
-/* Flip card wrapper */
+/* Outer card wrapper */
 .flip-card {
-  background-color: transparent;
+  perspective: 1000px;
   width: 220px;
   height: 260px;
-  perspective: 1000px;
-  cursor: pointer;
 }
 
-/* Flip card inner container */
+/* Inner flippable part */
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
+/* Flip on .flipped */
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -195,8 +194,8 @@ p { animation-delay: 1.5s; }
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   backface-visibility: hidden;
+  border-radius: 12px;
   background-color: #1e1e1e;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -206,7 +205,13 @@ p { animation-delay: 1.5s; }
   justify-content: center;
 }
 
-.flip-card-front img {
+/* Flip the back */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Card contents */
+.experience-card img {
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -214,20 +219,14 @@ p { animation-delay: 1.5s; }
   filter: brightness(0) invert(1);
 }
 
-.flip-card-front h4,
-.flip-card-back h4 {
+.experience-card h4 {
   margin: 10px 0 5px;
   font-size: 1em;
   color: whitesmoke;
 }
 
-.flip-card-front p,
-.flip-card-back p {
+.experience-card p {
   font-size: 0.9em;
   color: #aaa;
   margin: 0;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
 }
