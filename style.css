@@ -172,6 +172,7 @@ p { animation-delay: 1.5s; }
   perspective: 1000px;
   width: 220px;
   height: 260px;
+  flex-wrap: wrap;
 }
 
 /* Inner flippable part */
