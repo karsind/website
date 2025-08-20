@@ -192,7 +192,16 @@ p { animation-delay: 1.5s; }
   height: 80px;
   object-fit: contain;
   margin-bottom: 12px;
-  filter: brightness(0) invert(1); /* makes dark logos light */
+}
+
+/* Dark theme: make logos white */
+body:not(.light) .experience-card img {
+  filter: brightness(0) invert(1);
+}
+
+/* Light theme: keep logos in original colors */
+body.light .experience-card img {
+  filter: none;
 }
 
 .experience-card h4 {
