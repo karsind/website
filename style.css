@@ -3,6 +3,8 @@
   --text-color: #e0e0e0;
   --link-color: #64b5f6;
   --hr-color: #333;
+  --card-bg-color: #1e1e1e;
+  --secondary-text-color: #aaa;
 }
 
 body.light {
@@ -10,6 +12,8 @@ body.light {
   --text-color: #121212;
   --link-color: #1a73e8;
   --hr-color: #ccc;
+  --card-bg-color: #ffffff;
+  --secondary-text-color: #666;
 }
 
 body {
@@ -166,13 +170,16 @@ p { animation-delay: 1.5s; }
 }
 
 .experience-card {
-  background-color: #1e1e1e;
+  background-color: var(--card-bg-color);
   border-radius: 12px;
   padding: 20px;
   width: 220px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .experience-card:hover {
@@ -191,11 +198,11 @@ p { animation-delay: 1.5s; }
 .experience-card h4 {
   margin: 10px 0 5px;
   font-size: 1em;
-  color: whitesmoke;
+  color: var(--text-color);
 }
 
 .experience-card p {
   font-size: 0.9em;
-  color: #aaa;
+  color: var(--secondary-text-color);
   margin: 0;
 }
