@@ -215,3 +215,53 @@ body.light .experience-card img {
   color: var(--secondary-text-color);
   margin: 0;
 }
+
+/* Investment cards */
+.investment-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.investment-price {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.price-label {
+  color: var(--secondary-text-color);
+}
+
+.price-value {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.gain-row {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hr-color);
+  font-weight: 600;
+}
+
+.investment-links {
+  margin-top: auto;
+}
+
+.investment-links a {
+  color: var(--link-color);
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+.investment-links a:hover {
+  text-decoration: underline;
+}
