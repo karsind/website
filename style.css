@@ -224,6 +224,15 @@ body.light .experience-card img {
   justify-content: space-between;
 }
 
+.investment-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  display: block;
+}
+
 .investment-price {
   margin: 15px 0;
   text-align: left;
