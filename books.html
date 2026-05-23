@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books – Karsin Dass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="coursework.html">Coursework</a>
+    <a href="books.html">Books</a>
+  </nav>
+
+  <button id="theme-toggle" class="toggle" onclick="toggleTheme()">🌙</button>
+
+  <div class="section">
+    <h2>Books I've Read</h2>
+    <ul>
+      <li>The Firm - John Grisham</li>
+      <li>Wuthering Heights - Emily Brontë</li>
+      <li>The Murderer of Roger Ackroyd – Agatha Christie</li>
+      <li>No Mud No Lotus - Thich Nhat Hanh</li>
+      <li>The Hobbit – J.R.R. Tolkien</li>
+      <li>The Great Gatsby – F. Scott Fitzgerald</li>
+      <li>Animal Farm – George Orwell</li>
+    </ul>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+      document.body.classList.add("light");
+      toggleBtn.textContent = "🌙";
+    } else {
+      toggleBtn.textContent = "☀️";
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "🌙";
+      } else {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "☀️";
+      }
+    }
+  </script>
+
+</body>
+</html>
